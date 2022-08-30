@@ -1,0 +1,38 @@
+@import "../variable.scss";
+
+.header {
+  padding: 10px 50px;
+  font-size: 16px;
+  background-color: $bg;
+  &-flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 0 15px;
+    align-items: center;
+  }
+
+  &-icon {
+    width: 30px;
+    height: 30px;
+    color: #999999;
+  }
+
+  &-user-info {
+    font-size: 14px;
+    p:first-child {
+      font-weight: 700;
+      color: $blueDark;
+      font-size: 16px;
+    }
+  }
+  &-title {
+    text-transform: uppercase;
+    color: $blueDark;
+    font-weight: 600;
+  }
+  &-icon-arrow-down {
+    color: $blueDark;
+    height: 20px;
+    height: 20px;
+  }
+}

@@ -1,0 +1,35 @@
+@import "../variable.scss" ;
+
+.menu{
+ width: 250px;
+ height: 100vh;
+ background: $bg;
+ &-logo {
+    width : 200px;
+    height :86px ;
+    margin : 25px ;
+ }
+ &-level1 {
+   text-align: center;
+   font-size: 18px;
+   font-weight: 600;
+   color : $blueDark ;
+   border-bottom: 1px solid $blueLight;
+   padding: 10px 0;
+ }
+ &-level2 {
+    text-align: justify;
+    font-size: 16px ;
+    font-weight: normal;
+    &-name {
+         padding :10px 20px
+    }
+    
+ }
+ &-icon  {
+    width : 1rem ; 
+    height : 1rem ;
+    color : $blue;
+    padding-right : 10px 
+ }
+}
