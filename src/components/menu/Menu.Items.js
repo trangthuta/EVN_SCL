@@ -3,20 +3,20 @@ const categories = [
     {
         id: 1,
         name: "Quy trình SCL",
-        link : "" ,
+        path : "" ,
         children :[
             {
                 id: 1,
                 name: "Hồ sơ danh mục SCL",
                 icon : faBriefcase ,
-                link : "" 
+                path : "" 
                 
             },
             {
                 id: 2,
-                name: "Thẩm định hồ sơ danh mục SCL",
+                name: "Thẩm định hồ sơ DMSCL",
                 icon : faBriefcase ,
-                link : "" 
+                path : "" 
                 
             }
 
@@ -25,20 +25,20 @@ const categories = [
     {
         id: 2,
         name: "Quy trình SCL 2",
-        link : "" ,
+        path : "" ,
         children :[
             {
                 id: 1,
                 name: "Hồ sơ danh mục SCL",
                 icon : faBriefcase ,
-                link : "" 
+                path : "" 
                 
             },
             {
                 id: 2,
-                name: "Thẩm định hồ sơ danh mục SCL",
+                name: "Thẩm định hồ sơ DMSCL",
                 icon : faBriefcase ,
-                link : "" 
+                path : "" 
                 
             }
 
