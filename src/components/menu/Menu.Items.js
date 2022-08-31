@@ -3,7 +3,7 @@ const categories = [
     {
         id: 1,
         name: "Quy trình SCL",
-        path : "" ,
+        path : "/Home" ,
         children :[
             {
                 id: 1,

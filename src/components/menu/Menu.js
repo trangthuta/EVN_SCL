@@ -1,19 +1,27 @@
 import React from "react";
 import "./Menu.scss";
 import categories from "./Menu.Items";
+import {useLayoutEffect, useRef, useState} from 'react';
 // import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Menu() {
-  const menu = categories.filter((category) => !category.parent);
+  const ref = useRef(null);
+  const [width, setWidth] = useState(0);
+
+
+  useLayoutEffect(() => {
+    setWidth(ref.current.offsetWidth);
+  }, []);
 
   return (
-    <div className="menu">
+    <div className="menu"  ref={ref}>
+      {window.screen.availWidth- width}
       <img
         className="menu-logo"
         src="https://www.genco3.com/Data/Sites/1/media/logo/logo.png"
       />
-      {menu.map((menu) => {
+      {categories.map((menu) => {
         return (
           <ul key={menu.id} className="menu-level1">
             <li>
