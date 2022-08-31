@@ -9,16 +9,16 @@ function App() {
   
   const [isShowMenu, setIsShowMenu] = useState(true);
 
-  const callbackFunction = (childData) => {
-    setIsShowMenu(pre => childData)
-    console.log(isShowMenu)
+
+  let callbackFunction = (childData) => {
+    setIsShowMenu(childData)
   }
   
 
   return (
     <div className="App">
-      <Header parentCallback={() => callbackFunction}/>
-      <Menu />
+      <Header parentCallback={callbackFunction}/>
+      <Menu onShowmenu = {isShowMenu}/>
       <Home />
     </div>
   );

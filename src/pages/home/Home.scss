@@ -1,0 +1,58 @@
+@import "../../unils/variable";
+.home {
+  padding: 30px 30px;
+  &-flex-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-title {
+    text-transform: uppercase;
+    font-size: 20px;
+    color: $blueDark;
+    font-weight: bold;
+  }
+  &-box-search {
+    position: relative;
+    input {
+      width: 500px;
+      height: 40px;
+      border: 1px solid #eceef7;
+      padding: 0 35px 0 15px;
+      border-radius: 8px;
+      &::placeholder {
+       font-style: italic;
+      }
+    }
+  }
+  &-search-icon {
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    transform: translate(-150% , -50%);
+    width: 20px;
+    height: 20px;
+    &:hover {
+      color: $blue;
+    }
+  }
+  &-button-add {
+    border-radius: 8px;
+    background-color: $blue;
+    color: #fff;
+    border: none;
+    width: 126px;
+    height: 40px;
+    font-size: 14px;
+    &-icon {
+      padding: 2px 6px;
+      margin-right: 8px;
+      background: #fff;
+      color: $blue;
+      border-radius: 4px;
+    }
+  }
+  &-items-right {
+    gap :0 20px
+  }
+}
