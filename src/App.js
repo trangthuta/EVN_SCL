@@ -2,8 +2,10 @@ import React from "react";
 import "./App.scss";
 import Menu from "./components/menu/Menu";
 import Header from "./components/header/Header";
-import Home from "./pages/home/Home";
+import Home from "./pages/homePage/Home";
+import AddHM from "./pages/addHM/AddHM";
 import { useState } from "react";
+
 
 function App() {
   
@@ -19,7 +21,9 @@ function App() {
     <div className="App">
       <Header parentCallback={callbackFunction}/>
       <Menu onShowmenu = {isShowMenu}/>
-      <Home />
+      {/* <Home /> */}
+      <AddHM/>
+      
     </div>
   );
 }
