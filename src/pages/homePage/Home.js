@@ -1,11 +1,10 @@
 import React from "react";
 import "./Home.scss";
-// import Menu from "../../components/menu/Menu";
-// import Header from "../../components/header/Header";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import option from "./Home.StatusOption";
-import HoSo from "./Home.DataHoSo";
+import HoSo from "../../components/api/Home.DataHoSo";
+
 
 function Home() {
   return (

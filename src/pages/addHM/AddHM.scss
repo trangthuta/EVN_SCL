@@ -1,4 +1,14 @@
+@import "../../unils/variable.scss" ;
+
 .add-hs {
-    padding: 30px 30px;
+    padding: 20px 30px;
     padding-left: 280px;
+    &-title {
+         font-size:  20px;
+         color:  $blueDark;
+         font-weight: bold;
+    }
+//     .row-item {
+//          float: left;
+//     }
 }
